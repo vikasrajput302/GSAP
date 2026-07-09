@@ -55,7 +55,7 @@ var tl2 = gsap.timeline({
     scrollTrigger:{
         trigger:".section2 ",
         scroller:"body",
-        markers:true,
+        
         start:"top 50%",
         end:"top 0%",
         scrub:2,
@@ -72,23 +72,23 @@ tl2.from(".elem.line1.left",{
     x:-200,
     opacity:0,
 
-})
+},"line1")
 
 tl2.from(".elem.line1.right",{
     x:200,
     opacity:0,
     
-},"-=0.5")
+},"line1")
 
 
 tl2.from(".elem.line2.left",{
     x:-200,
     opacity:0,
 
-})
+},"line2")
 
 tl2.from(".elem.line2.right",{
     x:200,
     opacity:0,
     
-},"-=0.5")
+},"line2")
